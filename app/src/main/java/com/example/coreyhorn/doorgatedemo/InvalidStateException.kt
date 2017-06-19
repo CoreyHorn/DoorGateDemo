@@ -1,4 +1,3 @@
 package com.example.coreyhorn.doorgatedemo
 
-class InvalidStateException: Throwable() {
-}
+class InvalidStateException: Throwable()
