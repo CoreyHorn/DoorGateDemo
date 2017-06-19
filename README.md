@@ -2,7 +2,7 @@
 
 Simple example app showing Command/Scan in Kotlin.
 
-#Intentional Crashes
+# Intentional Crashes
 The app is designed to fail fast and will crash instead of entering an invalid state.
 The room can either be Open, Occupied, or Locked.
 The idea is that if noone is in the room, it is open.
