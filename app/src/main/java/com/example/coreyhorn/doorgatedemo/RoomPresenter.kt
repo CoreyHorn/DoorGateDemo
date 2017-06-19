@@ -1,6 +1,5 @@
 package com.example.coreyhorn.doorgatedemo
 
-import android.util.Log
 import com.example.coreyhorn.doorgatedemo.models.RoomCommand
 import com.example.coreyhorn.doorgatedemo.models.RoomCommand.WalkIn
 import com.example.coreyhorn.doorgatedemo.models.RoomCommand.WalkOut
@@ -34,7 +33,6 @@ fun roomAccumulator(previousState: RoomState, command: RoomCommand): RoomState {
     // Want to find a better way of doing this. Even if we just stick it in a function somewhere
     when (previousState) {
         is Open -> {
-            Log.d("stuff", "previous state is open")
             when (command) {
                 is WalkIn -> return Occupied()
                 is WalkOut -> throw InvalidStateException()
